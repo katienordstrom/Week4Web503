@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>To Do List</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+       <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo-right">Todo List</a>
+        </div>
+       </nav>
+
+       <div class="container">
+        <form name="todo-list" name="title" placeholder="Add Task">
+            <input type="text" name="title" placeholder="Add Task">
+            <button class="waves-effect waves-light btn">Add</button>
+        </form>
+        <ul class="collection" id="todo-list">
+            <li class="collection-item">
+                <div>
+                    <span>Buying Foods</span>
+                    <i class="material-icons secondary-content">delete</i>
+                    <a href="#modal" class="modal-trigger secondary content"></a>
+                    <i class ="material-icons secondary-content">edit</i>
+                </div>
+            </li>
+        </ul>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <input type="text" name="newtitle" placeholder="Update Task">
+            </div>
+               <div class=""modal-footer>
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Update</a>
+               </div> 
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
+        </div>
+       </div>
+        
+        <script src="index.js" async defer></script>
+    </body>
+</html>
