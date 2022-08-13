@@ -1,79 +1,80 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="nav.css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
-    </head>
-    <body>
-        <nav>
-            <div class="logo">
-                <img src="" alt="user">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">User Pages</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact Me</a></li>
-                </ul>
-                <header>
-                    <button id="toggle" class="toggle">
-<i class="fa fa-bars fa-2x"></i>
-                    </button>
-                    <h1>My Landing Page</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quisquam, quidem.
-                    </p>
 
-                    <button class="cta-btn" id="open">Sign Up</button>
-                </header>
-                <div class=""modal-container" id="modal">
-                <div class="modal">
-                    <button class="close-btn" id="close">
-                    <i class="fa fa-times"></i>
-                </button>
-                    <div class="modal-header">
-                        <h3>Sign Up</h3>
-                    </div>
-                    <div class="modal-content">
-                        <p>Please Register</p>
-                        <form class="modal-content">
-                            <div>
-                                <label for="name">Name</label>
-                                <input type="text" id="name" placeholder="Enter Name" class="form-input">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Link stylesheet as nav.css-->
+    <link rel="stylesheet" href="nav.css">
 
-                            </div>
-                            <div>
-                                <label for="email">Email</label>
-                                <input type="email" id="email" placeholder="Enter Email" class="form-input"/>
-                            </div>
-                            <div>
-                                <label for="password">Password</label>
-                                <input type="password" id="password" placeholder="Enter Password" class="form-input"/>
-                            </div>
-                            <div>
-                                <label for="password2">Confirm Password</label>
-                                <input type="password" id="password2" placeholder="Confirm Password" class="form-input"/>
-                            </div>
-                            <input type="submit" value="Submit" class="submit-btn"/>
-                        </form>
-                    </div>
-                </div>
-                </div>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="" alt="user">
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">User Page</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <button id="toggle" class="toggle">
+        <i class="fa fa-bars fa-2x"></i>
+        </button>
+        <h1>Katie's Landing Page</h1>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.
+        </p>
+        <button class="cta-btn" id="open">Sign Up</button>
+    </header>
+    <!--I need a header for the sign up page-->
+    <!--I need a name placeholder-->
+    <!--I need a password placeholder-->
+    <!--I need a password confirm placeholder-->
+    <!--I need a submit button-->
+    <div class="modal-container" id="modal-container">
+        <div class="modal">
+            <button class="close.btn" id="close">
+                <i class="fa fa-times"></i>
+            </button>
+            <div class="modal-header">
+                <h3>Sign Up</h3>
             </div>
-        </nav>
-        
-        
-        <script src="nav.js" async defer></script>
-    </body>
-</html>
+            <div class="modal-content">
+                <p>Please register</p>
+                <form class="modal-content">
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Enter your name" class="form-input">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="text" id="email" placeholder="Enter your email" class="form-input">
+                    </div>
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter your password" class="form-input">
+                    </div>
+                    <div>
+                        <label for="password-confirm">Confirm Password</label>
+                        <input type="password" id="password-confirm" placeholder="Confirm your password" class="form-input">
+                    </div>
+                    <input type="submit" value="Submit" class="submit-btn">
+            </div>
+        </div>
 
-<!-- I need a:
-header for sign up 
-name placeholder
-pw placeholder 
-Confirm placeholder
-submit button -->
+    </div>
+    <script src="nav.js" async defer></script>
+</body>
+
+</html>
